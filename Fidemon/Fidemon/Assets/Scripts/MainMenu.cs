@@ -3,17 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void NewGame()
+    public void PlayGame()
     {
         SceneManager.LoadScene("Level_1");
     }
-    public void ContinueGame()
+
+    public void ExitGame()
     {
-        // placeholder: si tenés guardado, cargar estado. Por ahora recarga Level_1.
-        SceneManager.LoadScene("Level_1");
-    }
-    public void QuitGame()
-    {
+        Debug.Log("Saliendo del juego...");
         Application.Quit();
     }
 }
+
